@@ -159,7 +159,7 @@ class Train_change {
 
     public void url_information(ArrayList<String> tr) {
         try {
-            URL url = new URL("https://api.trip2.jp/ex/tokyo/v1.0/json?src=" + URLEncoder.encode(tr.get(0), "UTF-8") + "&dst=" + URLEncoder.encode(tr.get(1), "UTF-8") + "&key=114.184.216.100");
+            URL url = new URL("https://api.trip2.jp/ex/tokyo/v1.0/json?src=" + URLEncoder.encode(tr.get(0), "UTF-8") + "&dst=" + URLEncoder.encode(tr.get(1), "UTF-8") + "&key=NULL");
             URLConnection connection = url.openConnection();
             connection.connect();
             InputStream inputStream = connection.getInputStream();
@@ -268,7 +268,7 @@ class We_information {
 
     public void url_information(TrainChange_Weather tcw, String x, String y) {
         try {
-            URL url2 = new URL("http://api.openweathermap.org/data/2.5/forecast?lon=" + x + "&lat=" + y + "&APPID=83b8112a5777a3bca1207d0b9a21dc3d&units=metric&mode=xml");
+            URL url2 = new URL("http://api.openweathermap.org/data/2.5/forecast?lon=" + x + "&lat=" + y + "&APPID=NULL&units=metric&mode=xml");
             URLConnection connection2 = url2.openConnection();
             connection2.connect();
             InputStream inputStream2 = connection2.getInputStream();
