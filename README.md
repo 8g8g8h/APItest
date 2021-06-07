@@ -8,6 +8,7 @@
 ①:  
 名称:
 URL :https://api.trip2.jp/ex/tokyo/v1.0/json?src＝出発駅&dst=到着駅
+
 KEYには、自分のkeyを入れてください
 
 ②:  
